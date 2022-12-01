@@ -16,15 +16,6 @@
       data-n-g=""
     />
     <style>
-      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: #111111;
-        opacity: 1; /* Firefox */
-      }
-
-      ::-ms-input-placeholder { /* Microsoft Edge */
-        color: #111111;
-      }
-      
       .TNEW-content {
         margin-bottom: 10rem;
       }
@@ -47,6 +38,15 @@
         border-radius: 0;
         border: 2px solid #111111;
         height: 56px;
+      }
+      
+      input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #111111;
+        opacity: 1; /* Firefox */
+      }
+
+      input[type="text"]::-ms-input-placeholder, input[type="email"]::-ms-input-placeholder, input[type="password"]::-ms-input-placeholder { /* Microsoft Edge */
+        color: #111111;
       }
       
       .tn-login-component .control-label {
