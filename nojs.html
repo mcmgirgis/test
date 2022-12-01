@@ -16,6 +16,19 @@
       data-n-g=""
     />
     <style>
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #111111;
+        opacity: 1; /* Firefox */
+      }
+
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #111111;
+      }
+      
+      .TNEW-content {
+        margin-bottom: 10rem;
+      }
+      
       h1 {
         line-height: 1.1;
         margin-bottom: 1rem;
@@ -33,9 +46,15 @@
       input[type="text"], input[type="email"], input[type="password"] {
         border-radius: 0;
         border: 2px solid #111111;
+        height: 56px;
       }
       
       .tn-login-component .control-label {
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+      .tn-login-component .control-label > span:first-child {
         clip: rect(1px, 1px, 1px, 1px);
         clip-path: inset(50%);
         height: 1px;
